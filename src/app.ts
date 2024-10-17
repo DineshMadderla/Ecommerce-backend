@@ -38,7 +38,7 @@ const app = express();
 
 app.use(express.json());
 app.use(morgan("dev"));
-app.use(cors({ origin: "https://e-commerce-bwfetmaq7-dineshs-projects-b9fd8385.vercel.app" }));
+app.use(cors({ origin: "https://e-commerce-9139byz3w-dineshs-projects-b9fd8385.vercel.app" }));
 
 app.get("/", (req, res) => {
   res.send("API Working with /api/v1");
