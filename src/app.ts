@@ -38,7 +38,10 @@ const app = express();
 
 app.use(express.json());
 app.use(morgan("dev"));
-app.use(cors()); 
+app.use(cors({
+  origin: 'https://ecommerce-frontend-nph5reww3-dineshs-projects-b9fd8385.vercel.app', // Replace with your frontend's URL
+  credentials: true // Enable credentials to be included in requests
+}));
 
 app.get("/", (req, res) => {
   res.send("API Working with /api/v1");
